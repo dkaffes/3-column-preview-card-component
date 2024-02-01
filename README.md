@@ -20,7 +20,7 @@ This is a solution from Dimitris Kaffes to the [3-column preview card component 
 
 Mobile-first design was implemented.
 
-The main concern was to avoid using unneccessary declarations and keep the `css` simple and clean.
+The main concern was to avoid using unnecessary declarations and keep the `css` simple and clean.
 
 A media query was used to add complexity and transform the Normal Flow of the mobile view to a Flexbox layout on the desktop view.
 
