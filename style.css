@@ -1,0 +1,133 @@
+/**************************/
+/* Mobile First */
+/**************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem; /* 15 pixels. rem calculated: 15/16 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 100svh;
+}
+
+.container {
+  max-width: 40rem; /* 640px */
+  margin: 1rem;
+}
+
+body,
+.btn {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+  padding: 3rem;
+}
+
+.icon,
+.title {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+.description {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.card-sedans {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
+}
+
+.card-suvs {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+}
+
+.card-luxury {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+  border-radius: 0 0 10px 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em; /* the button padding can scale with the button's font size */
+  border-radius: 80px;
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Footer */
+.attribution {
+  font-size: 0.6875rem; /* 11 pixels. rem calculated: 11/16 */
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* active states */
+.btn:active {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  /* border: 2px solid hsl(0, 0%, 95%); */
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 2px hsl(0, 0%, 95%);
+}
+/**************************/
+/* MEDIA QUERIES */
+/* changing the card layout to flexbox */
+/**************************/
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* ABOVE 800px  */
+@media (min-width: 50em) {
+  .container {
+    display: flex;
+    max-width: 60rem; /* 960px */
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .icon,
+  .title {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    margin-top: auto;
+  }
+
+  .card-sedans {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card-luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
