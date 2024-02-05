@@ -75,4 +75,4 @@ The use of CSS custom properties (variables) so that the colors can be reused th
 
 ## Acknowledgments
 
-Special thanks to [Jonas Schmedtmann](https://codingheroes.io/) for his HTML and CSS course [mentioned above](<(#useful-resources)>).
+Special thanks to [Jonas Schmedtmann](https://codingheroes.io/) for his HTML and CSS course mentioned above.
