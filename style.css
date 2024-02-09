@@ -78,15 +78,6 @@ body,
   transition: all 0.4s;
 }
 
-/* Footer */
-.attribution {
-  font-size: 0.6875rem; /* 11 pixels. rem calculated: 11/16 */
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 /* button states */
 .btn:hover,
 .btn:active {
@@ -96,6 +87,16 @@ body,
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 2px hsl(0, 0%, 95%);
 }
+
+/* Footer */
+.attribution {
+  font-size: 0.6875rem; /* 11 pixels. rem calculated: 11/16 */
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 /**************************/
 /* MEDIA QUERIES */
 /* changing the card layout to flexbox */
